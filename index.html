@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <main>
+        <article class="logo">
+            <h1 class="h1">TODO</h1>
+            <p class="btnAdd"><svg width="56" height="56" viewBox="0 0 56 56" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1_2517)">
+                        <path
+                            d="M44.3333 30.3333H30.3333V44.3333H25.6667V30.3333H11.6667V25.6667H25.6667V11.6667H30.3333V25.6667H44.3333V30.3333Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1_2517">
+                            <rect width="56" height="56" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </p>
+            <dialog class="InfoModal">
+                <h1 type="text" class="InfoTitle"></h1>
+                <p type="text" class="InfoDescription"></p>
+                <select class="InfoStatus">
+                    <option value="true">Done</option>
+                    <option value="false">!Done</option>
+                </select>
+                <button type="button" class="cancelInfo">Cancel</button>
+            </dialog>
+            <dialog class="AddModal">
+                <form class="formAdd">
+                    <article class="task">
+                        <h1>Task</h1>
+                        <img class="x1" src="./clear.svg">
+                    </article>
+                    <input type="text" name="AddTitle" class="AddTitle" placeholder="Title">
+                    <input type="text" name="AddDescription" class="AddDescription" placeholder="Description">
+                    <select name="AddStatus">
+                        <option value="true">Done</option>
+                        <option value="false">!Done</option>
+                    </select>
+                    <article class="btns">
+                        <button class="aaad">Add</button>
+                        <button type="button" class="cancelAdd">Cancel</button>
+                    </article>
+                </form>
+            </dialog>
+            <dialog class="EditModal">
+                <form class="formEdit">
+                    <article class="task">
+                        <h1>Task</h1>
+                        <img class="x2" src="./clear.svg">
+                    </article>
+                    <input type="text" name="EditTitle" class="EditTitle" placeholder="Title">
+                    <input type="text" name="EditDescription" class="EditDescription" placeholder="Description">
+                    <select name="EditStatus">
+                        <option value="true">Done</option>
+                        <option value="false">!Done</option>
+                    </select>
+                    <article class="btns">
+                        <button class="editt">Edit</button>
+                        <button type="button" class="cancelEdit">Cancel</button>
+                    </article>
+                </form>
+            </dialog>
+        </article>
+        <article class="search_box">
+            <article class="pos">
+                <select class="selectStatus">
+                    <option value="All">All</option>
+                    <option value="true">done</option>
+                    <option value="false">!done</option>
+                </select>
+                <aside>
+                    <input type="text" class="Search" placeholder="...Search">
+                </aside>
+            </article>
+            <article class="box"></article>
+        </article>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
